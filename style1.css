@@ -1,0 +1,22 @@
+html,
+body{
+    height: 100%;
+    background-color: rgb(179, 136, 136);
+    
+    
+}
+
+.container{
+    height: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    
+}
+
+li{
+    list-style-type: none;
+}

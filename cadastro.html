@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(207, 180, 146);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 40px;
+    }
+
+    .formulario {
+        width: 800px;
+        background-color: blue;
+        margin: auto;
+        color: white;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+        box-shadow: inset 0 0 1em gold, 0 0 1em red;
+    }
+
+    .conteudo {
+        background-color: rgb(124, 89, 89);
+        width: 800px;
+        margin: auto;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    #nome {
+        width: 100%;
+        height: 100px;
+    }
+
+    .nome {
+        margin-left: 25px;
+        margin-top: 30px;
+        width: 125px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700%;
+    }
+
+    .primeironome {
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+    }
+
+    .sobrenome {
+        position: relative;
+        left: 417px;
+        top: -80px;
+        line-height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: #555;
+
+    }
+
+    .primeirolabel {
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 14px;
+        left: 203px;
+        top: -45px;
+    }
+
+    .sobrenomelabel {
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 14px;
+        left: 169px;
+        top: -45px;
+    }
+
+    .empresa {
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 468px;
+        border-radius: 6px;
+        padding: 0 22px;
+    }
+
+    .email {
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 468px;
+        border-radius: 6px;
+        padding: 0 22px;
+    }
+
+    .codigo {
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 95px;
+        border-radius: 6px;
+        padding: 0 22px;
+    }
+
+    .number {
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 280px;
+        border-radius: 6px;
+        padding: 0 22px;
+    }
+    .codigo_area{
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: 54px;
+        top: -1px;
+    }
+    .numero-telefone{
+        position: relative;
+        color: #E5E5E5E5;
+        text-transform: capitalize;
+        font-size: 16px;
+        left: -130px;
+        top: -1px;
+    }
+    .opcoes{
+        position: relative;
+        left: 200px;
+        top: -37px;
+        line-height: 40px;
+        width: 515px;
+        height: 40px;
+        border-radius: 6px;
+        padding: 0 22px;
+        font-size: 16px;
+        color: rgb(29, 27, 27);
+        outline:none ;
+        overflow:hidden ;
+    }
+    .opcoes option{
+        font-size: 20px;
+    }
+    #nivel{
+        margin-left: 25px;
+        color: white;
+        font-size: 18px;
+    }
+    .radio{
+        display: inline-block;
+        padding-right: 70px;
+        font-size: 25px;
+        margin-left: 25px;
+        margin-top: 15px;
+        color: white;
+    }
+    .radio input{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+
+    }
+    button{
+        background-color: blue;
+        display: block;
+        margin: 20px 0px 0px 20px;
+        text-align: center;
+        border-radius: 12px;
+        border: 2px solid #bcd4da;
+        padding: 14px 110px ;
+        outline: none;
+        color: white;
+        cursor: pointer;
+        transition: 0.25px;
+        text-align: white;
+        color: white;
+
+    }
+    button:hover{
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="formulario">
+        <h1>Formulario de Cadastro</h1>
+    </div>
+    <div class="conteudo">
+        <form>
+            <div id="nome">
+                <h2 class="nome">Nome e Sobrenome</h2>
+                <input class="primeironome" type="text" name="primeiro_nome">
+                <label class="primeirolabel"></label>
+                <input class="primeironome" type="text" name="sobre_nome">
+                <label class="sobrenomelabel"></label>
+            </div>
+            <h2 class="nome">Empresa</h2>
+            <input class="empresa" type="text" name="empresa">
+
+            <h2 class="nome">Email</h2>
+            <input class="email" type="text" name="email">
+
+            <h2 class="nome">Telefone com DDD</h2>
+            <input class="codigo" type="text" name="codigo_area">
+            <label class="codigo_area">DDD</label>
+            <input class="number" type="text" name="phone">
+            <label class="numero-telefone" for="">Telefone</label>
+
+            <h2 class="nome">Sexo</h2>
+            <select class="opcoes" name="assunto">
+                <option disabled="disabled" selected="selected" value="">...Selecione Opções</option>
+                <option value="">Masculino</option>
+                <option value="">Feminino</option>
+            </select>
+
+            <h2 class="nivel">Você é novo por aqui?</h2>
+            <label class="radio">
+                <input class="radio_one" type="radio" name="radio" checked="checked" name="">
+                <span class="checkmark"></span>
+                sim
+
+            </label>
+            <label class="radio">
+                <input class="radio_two" type="radio" name="radio" checked="checked" name="">
+                <span class="checkmark"></span>
+                não
+
+            </label>
+            <button type="submit"> <a href="index.html"> Enviar</a></button></a>
+        </form>
+    </div>
+</body>
+
+</html>

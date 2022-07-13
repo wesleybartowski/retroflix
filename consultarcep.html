@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="cep.js">
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: hsl(35, 53%, 83%);
+    }
+
+    h1 {
+        margin-left: 15%;
+        color: rgb(240, 12, 12);
+        width: 800px;
+        background-color: blue;
+        margin: auto;
+        color: white;
+        text-align: center;
+        /* border-radius: 15px 15px 0px 0px; */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h1>Consultando Cep</h1>
+        </div>
+        <form>
+            <div class="from-group">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <small>00000-000</small>
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+                <small>Rua</small>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+                <small>Bairro</small>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+                <small>Cidade</small>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf">
+                <small>Estado</small>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+<script src="cep.js"></script>
+
+</html>

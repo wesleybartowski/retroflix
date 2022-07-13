@@ -1,0 +1,50 @@
+html,
+body{
+    height: 100%;
+    
+}
+
+.container{
+    height: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    
+}
+
+li{
+    list-style-type: none;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    width: 300px;
+    background-color: rgb(5, 0, 0);
+    /* margin-left: 10%; */
+    padding-left: 2px;
+    /* border-radius:2mm ; */
+    
+}
+
+.card{
+    
+    border-color: rgb(252, 249, 249);
+}
+.btn-azul2 {
+    display: block;
+    /* padding: 1rem; */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+
+} 
+a {
+    text-decoration: none;
+}
+
+img{
+    overflow: hidden;
+}

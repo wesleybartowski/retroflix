@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+    <script src="Login/java.js"></script>
+
+    <title>BIBLIOTECA DE FILMES</title>
+
+</head>
+
+<body onload="startCountdown();pagina()">
+
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="row justify-content-center">
+                <div class="row mt-4">
+                    <h1>RêtroFlix</h1>
+
+                </div>
+
+            </div>
+            <span id="sessao" style="color:rgb(0, 0, 0);"></span>
+            <div class="col">
+                <h3>Bem Vindo</h3>
+                <h6> BARTOWSKI</h6>
+                <h6 id="demo"></h6>
+            </div>
+            <div class="col offset-8">
+                <div id="clock">8:10:45</div>
+                <a href="faleconosco.html">
+                    <h5 class="btn-azul2">Fale-Conosco</h5>
+                </a>
+                <a href="consultarcep.html">
+                    <h5 class="btn-azul2">Consultando CEP</h5>
+                </a>
+                <a href="carinho.html">
+                    <h5 class="btn-azul2">Carinho de Compra</h5>
+                </a>
+            </div>
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="A Garota de Rosa-Shocking.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="CLUBE DOS CINCOS.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="CONSTRUINDO UMA CARREIRA.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="Gatinhas & Gatões.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="CURTINDO A VIDA ADOIDADO.jpg" alt=""></li>
+                        <li class="glide__slide"><img src="Sem Licença para Dirigir.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+            <script>
+                const config = {
+                    type: 'carousel',
+                    perView: 5,
+                    breakpoints: {
+
+                        800: {
+                            perView: 2
+                        }
+                    },
+                    autoplay: 1500
+                };
+                new Glide('.glide', config).mount()
+            </script>
+            <div class="row mt-5">
+
+                <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <a href="pag1.html"><img src="DE VOLTA PARA O FUTURO.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">De Volta Para o Futuro</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <input type="text" style="width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <a href="pag2.html"><img src="CLUBE DOS CINCOS.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Clube Dos Cincos</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <input type="text" style="width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <a href="pag3.html"><img src="CONSTRUINDO UMA CARREIRA.jpg" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Construindo Uma Carreira</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <input type="text" style="width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <a href="pag4.html"><img src="CURTINDO A VIDA ADOIDADO.jpg" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Curtindo a Vida Adoidado</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                            </p>
+                            <input type="text" style="width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <a href="pag5.html"><img src="A Garota de Rosa-Shocking.jpg" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">A Garota de Rosa-Shocking</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                            </p>
+                            <input type="text" style="width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 10rem;">
+                        <a href="pag6.html"><img src="Sem Licença para Dirigir.jpg" class="card-img-top"
+                                alt="...">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Sem Licença para Dirigir</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <input type="text" style="width: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag7.html"><img src="JUMANJI.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Jumanji</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag8.html"><img src="TE PEGO LA FORA.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Te Pego La Fora</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag9.html"><img src="BRINQUEDO ASSASSINO.jpg" class="card-img-top"
+                                    alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Brinquedo Assassino</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag10.html"><img src="Os Caça-Fantasmas.jpg" class="card-img-top"
+                                    alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Os Caça-Fantasmas</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag11.html"><img src="O EXTERMINADOR DO FUTURO 2 O JULGAMENTO FINAL.jpg"
+                                    class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">O Exterminador do Futuro 2 - O Julgamento Final</h5>
+                                <p class="card-text">Some quick example text to build</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag12.html"><img src="Os Fantasmas Se Divertem.jpg" class="card-img-top"
+                                    alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Os Fantasmas Se Divertem</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag13.html"><img src="Querida, Encolhi as Crianças.jpg" class="card-img-top"
+                                    alt="...">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Querida, Encolhi as Crianças</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag14.html"><img src="Karatê Kid - A Hora da Verdade.jpg"
+                                    class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Karatê Kid - A Hora da Verdade</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag15.html"><img src="Uma Noite de Aventuras.jpg" class="card-img-top"
+                                    alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Uma Noite de Aventuras</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the...
+                                </p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag16.html"><img src="OS GOONIES.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Os Goonies</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag17.html"><img src="Gatinhas & Gatões.jpg" class="card-img-top"
+                                    alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Gatinhas & Gatões</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                </p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10rem;">
+                            <a href="pag18.html"><img src="JURASSIC PARK.jpg" class="card-img-top" alt="..."></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Jurassic Park</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <input type="text" style="width: 100px;">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="filmes.html"></script>
+<script src="relogio.js"></script>
+<script src="cronometro.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</html>

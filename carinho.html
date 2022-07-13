@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(226, 153, 153);
+    }
+    h1{
+      margin-left: 5%;
+      color: rgb(240, 12, 12);
+      width: 800px;
+        background-color: blue;
+        margin: auto;
+        color: white;
+        text-align: center;
+        border-radius: 15px 15px 0px 0px;
+    }
+</style>
+
+<body onload="getCart()">
+    <div class="row mt-5">
+      <h1>Carinho de Compra</h1>
+        <div class="col-sm-6 mt-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="apagar" 
+                onclick="getCart();if(document.getElementById('valor').disabled==true)
+                {
+                document.getElementById('valor').disabled=true;
+                document.getElementById('parcela').disabled=true;
+                document.getElementById('pagamento2').disabled=false;
+                }">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Avista
+                </label>
+              </div>
+              <select class="form-select" aria-label="Default select example " id="pagamento2">
+                <option selected>Forma de Pagamento</option>
+                <option value="1">Boleto</option>
+                <option value="2">Pix</option>
+                <option value="3">cartão</option>
+              </select>
+              <input type="text" class="form-control mt-3" id="valor" disabled>
+              <a href="#" class="btn btn-primary mt-3">Pagar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+          <div class="card">
+            <div class="card-body"> 
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="card1"
+                 onclick="if(document.getElementById('card').disabled==true)
+                {
+                  document.getElementById('pagamento2').disabled=true;
+                  document.getElementById('parcela').disabled=false;
+                  document.getElementById('valor').value=''
+                  }">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Parcelado
+                </label>
+              </div>
+              <select class="form-select" aria-label="Default select example" id="parcela">
+                <option selected>Quantidade de Parcela</option> 
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <input type="text" id="card" class="form-control mt-3" disabled>
+              <a href="#" class="btn btn-primary mt-3" style="align-items:center;">Pagar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="somacarinho.js"></script>
+</html>
